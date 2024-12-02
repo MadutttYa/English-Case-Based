@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const openMenu = () => {
     navItems.classList.add("active");
     closeMobile.classList.add("active");
+    document.body.style.overflow = "hidden";
   };
 
   // Function to close the menu
   const closeMenu = () => {
     navItems.classList.remove("active");
     closeMobile.classList.remove("active");
+    document.body.style.overflow = "auto";
   };
 
   // Event listeners
