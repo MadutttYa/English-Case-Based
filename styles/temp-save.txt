@@ -1,0 +1,62 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 50px;
+  position: relative;
+}
+
+.nav-items {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.75rem;
+  transition: 0.5s ease;
+}
+
+.nav-items > li a {
+  margin-left: 1.5rem;
+}
+
+.nav-items > img {
+  width: 50px;
+  margin-left: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid black;
+  padding: 0.5rem;
+  width: 60%;
+  transition: 0.5s ease;
+}
+
+.download-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.mobile-menu .open-mobile {
+  width: 50px;
+}
+
+.nav-items.active {
+  left: 0;
+}
