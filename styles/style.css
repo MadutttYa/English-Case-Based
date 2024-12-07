@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -37,6 +37,9 @@ p {
 .nav-container {
   background-color: white;
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
 }
 
 .nav-items {
@@ -209,6 +212,7 @@ p {
 .references ul li {
   list-style: square;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .references ul li a {
@@ -233,7 +237,8 @@ p {
     align-items: center;
     border-bottom: 1px solid black;
     height: 50px;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
 
   .mobile-menu {
